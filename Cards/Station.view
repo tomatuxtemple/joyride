@@ -1,0 +1,60 @@
+Station Horizontal
+alignItems center
+backgroundColor white
+borderTopLeftRadius 8
+borderTopRightRadius 8
+borderBottomLeftRadius 8
+borderBottomRightRadius 8
+shadowColor rgba(96, 134, 180, 0.2)
+shadowSpread 0
+shadowBlur 20
+shadowOffsetY 5
+shadowOffsetX 0
+marginTop 10
+paddingBottom 20
+paddingLeft 20
+paddingRight 20
+paddingTop 20
+BikeSvg
+width 30
+height 30
+stroke #4a4a4a
+
+Text
+color #005fff
+fontFamily Montserrat
+fontSize 26
+fontWeight 600
+text <freeBikes 17
+marginLeft 10
+
+SpaceSvg
+width 30
+height 30
+marginLeft 30
+stroke #4a4a4a
+
+Text
+color #005fff
+fontFamily Montserrat
+fontSize 26
+fontWeight 600
+text <emptySpaces 8
+marginLeft 10
+flexGrow 1
+
+Text
+color #4a4a4a
+fontFamily Montserrat
+fontSize 26
+fontWeight 600
+text <distance 0.2
+marginLeft 10
+
+Text
+color #4a4a4a
+fontFamily Montserrat
+fontSize 14
+fontWeight 400
+text km
+marginLeft 10

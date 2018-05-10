@@ -1,0 +1,16 @@
+SpaceSvg Svg
+alignSelf < auto
+marginTop < 0
+marginBottom < 0
+marginLeft < 0
+marginRight < 0
+baseProfile tiny
+viewBox 0 0 50 50
+width < 50
+height < 50
+SvgPath
+fill < none
+stroke < #BDBDBD
+strokeWidth 3
+strokeMiterlimit 10
+d M3 10.2h44.1v29.5H3z
