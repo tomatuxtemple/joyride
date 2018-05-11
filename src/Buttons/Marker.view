@@ -1,6 +1,9 @@
-BikeMarker Horizontal
+Marker Horizontal
 alignItems center
 backgroundColor white
+borderColor white
+borderWidth 1
+borderStyle solid
 borderTopLeftRadius 8
 borderTopRightRadius 8
 borderBottomLeftRadius 8
@@ -15,6 +18,11 @@ paddingBottom 8
 paddingLeft 8
 paddingRight 8
 paddingTop 8
+opacity 0.75
+when <selected
+borderColor #005fff
+when <!isOpen
+opacity 0.15
 BikeSvg
 width 16
 height 16

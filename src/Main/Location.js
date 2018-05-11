@@ -34,8 +34,6 @@ export default class App extends Component {
       location: null,
     })
 
-    console.log('refreshing')
-
     const { status } = await Permissions.askAsync(Permissions.LOCATION)
 
     if (status !== 'granted') {

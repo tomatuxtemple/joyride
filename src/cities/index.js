@@ -20,8 +20,7 @@ export const getNearBy = coords => {
     .map(station => {
       return {
         ...station,
-        // TODO maybe meters?
-        distance: getDistance(coords, station) / 1000,
+        distance: getDistance(coords, station),
       }
     })
     .sort(byDistance)
@@ -31,18 +30,20 @@ export const getLiveInfo = async list => {
   const data = await getStationsData(list[0].city)
   return list.map(station => ({
     ...station,
-    ...getFreeBikesAndEmptySpaces(
+    ...getFreeBikesEmptySpacesAndIsOpen(
       data.find(item => item.number === station.number)
     ),
   }))
 }
 
-const getFreeBikesAndEmptySpaces = ({
+const getFreeBikesEmptySpacesAndIsOpen = ({
   available_bikes,
   available_bike_stands,
+  status,
 }) => ({
   freeBikes: available_bikes,
   emptySpaces: available_bike_stands,
+  isOpen: status === 'OPEN',
 })
 
 // TODO extract

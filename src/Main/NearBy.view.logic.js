@@ -12,9 +12,9 @@ class NearByLogic extends React.Component {
 
     if (props.location && props.location.coords) {
       this.state = {
+        coords: props.location.coords,
         from: getNearBy(props.coords),
         isShowingList: true,
-        coords: props.location.coords,
       }
     } else {
       this.state = {
@@ -28,6 +28,9 @@ class NearByLogic extends React.Component {
       return {
         from: getNearBy(nextProps.location.coords),
         coords: nextProps.location.coords,
+        isLoading: nextProps.isLoading,
+        isReady: nextProps.isReady,
+        station: null,
       }
     }
 
@@ -39,14 +42,30 @@ class NearByLogic extends React.Component {
 
     if (prevState.coords !== state.coords) {
       this.setState({
+        isLoading: true,
+        isReady: false,
+      })
+
+      this.setState({
         from: await getLiveInfo(state.from),
+        isLoading: false,
+        isReady: true,
+        station: null,
       })
     }
+  }
+
+  findStation = station => {
+    this.setState({
+      isShowingList: false,
+      station,
+    })
   }
 
   toggleList = () => {
     this.setState({
       isShowingList: !this.state.isShowingList,
+      station: null,
     })
   }
 
@@ -56,19 +75,24 @@ class NearByLogic extends React.Component {
     if (state.isShowingList) {
       return (
         <NearBy
+          findStation={this.findStation}
+          from={state.from && state.from.slice(0, 10)}
+          isLoading={state.isLoading}
+          isReady={state.isReady}
+          isShowingList
           refresh={props.refresh}
           toggleList={this.toggleList}
-          isShowingList
-          from={state.from && state.from.slice(0, 10)}
         />
       )
     } else {
       return (
         <NearBy
-          refresh={props.refresh}
-          toggleList={this.toggleList}
           from={state.from}
-          {...state.coords}
+          isLoading={props.isLoading}
+          isReady={state.isReady}
+          refresh={state.refresh}
+          toggleList={this.toggleList}
+          {...(state.station ? state.station : state.coords)}
         />
       )
     }

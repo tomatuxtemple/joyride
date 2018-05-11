@@ -43,6 +43,11 @@ fontWeight 400
 text Stations near by
 flexGrow 1
 
+Loading
+onWhen <isLoading
+size 20
+color #005fff
+
 Vertical
 onClick <refresh
 borderColor #005fff
@@ -57,6 +62,9 @@ paddingLeft 10
 paddingRight 10
 paddingTop 4
 marginRight 20
+opacity 1
+when <isLoading
+opacity 0.25
 Text
 color #005fff
 fontFamily Montserrat
@@ -77,6 +85,7 @@ paddingLeft 20
 paddingRight 20
 marginTop 10
 Station
+onClick <findStation
 
 
 Map
@@ -88,3 +97,4 @@ showsUserLocation true
 List
 from <
 Marker
+selected <id
