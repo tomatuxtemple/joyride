@@ -1,0 +1,44 @@
+BikeMarker Horizontal
+alignItems center
+backgroundColor white
+borderTopLeftRadius 8
+borderTopRightRadius 8
+borderBottomLeftRadius 8
+borderBottomRightRadius 8
+shadowColor rgba(96, 134, 180, 0.2)
+shadowSpread 0
+shadowBlur 20
+shadowOffsetY 5
+shadowOffsetX 0
+# marginTop 10
+paddingBottom 8
+paddingLeft 8
+paddingRight 8
+paddingTop 8
+BikeSvg
+width 16
+height 16
+stroke #4a4a4a
+
+Text
+color #005fff
+fontFamily Montserrat
+fontSize 14
+fontWeight 600
+text <freeBikes 17
+marginLeft 10
+
+SpaceSvg
+width 16
+height 16
+marginLeft 16
+stroke #4a4a4a
+
+Text
+color #005fff
+fontFamily Montserrat
+fontSize 14
+fontWeight 600
+text <emptySpaces 8
+marginLeft 10
+flexGrow 1
