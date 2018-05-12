@@ -47,6 +47,7 @@ height 30
 
 ButtonOutline
 marginRight 10
+text LABEL
 
 ButtonOutline
 marginRight 20
