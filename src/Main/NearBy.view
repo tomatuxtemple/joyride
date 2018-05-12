@@ -35,6 +35,7 @@ Horizontal
 alignItems center
 marginTop 30
 marginLeft 20
+paddingBottom 10
 Vertical
 flexBasis auto
 flexGrow 1
