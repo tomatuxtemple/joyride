@@ -30,6 +30,7 @@ text <address High Harignton Road
 
 Horizontal
 alignItems center
+marginTop 10
 BikeSvg
 width 30
 height 30
