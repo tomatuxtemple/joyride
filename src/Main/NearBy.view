@@ -37,7 +37,7 @@ marginTop 30
 marginLeft 20
 LogoSvg
 width 100
-height 50
+height 40
 
 Vertical
 onClick <refresh
