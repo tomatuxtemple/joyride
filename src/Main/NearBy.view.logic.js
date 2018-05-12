@@ -82,6 +82,9 @@ class NearByLogic extends React.Component {
           isShowingList
           refresh={props.refresh}
           toggleList={this.toggleList}
+          contentContainerStyle={{
+            paddingBottom: 200,
+          }}
         />
       )
     } else {
@@ -92,6 +95,9 @@ class NearByLogic extends React.Component {
           isReady={state.isReady}
           refresh={state.refresh}
           toggleList={this.toggleList}
+          contentContainerStyle={{
+            paddingBottom: 200,
+          }}
           {...(state.station ? state.station : state.coords)}
         />
       )

@@ -3,6 +3,8 @@ flexBasis auto
 flexGrow 1
 flexShrink 1
 backgroundColor white
+# paddingTop 1tbh
+# padddingBottom 1bbh
 Button Vertical
 onClick <toggleList
 bottom 20
@@ -84,6 +86,7 @@ flexBasis auto
 paddingLeft 20
 paddingRight 20
 marginTop 10
+contentContainerStyle <
 Station
 onClick <findStation
 
