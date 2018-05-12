@@ -5,6 +5,8 @@ flexShrink 1
 backgroundColor white
 # paddingTop 1tbh
 # padddingBottom 1bbh
+NavBar
+
 List
 from <
 flexGrow 1
@@ -16,6 +18,3 @@ paddingRight 20
 marginTop 10
 contentContainerStyle <
 Station
-
-
-NavBar
