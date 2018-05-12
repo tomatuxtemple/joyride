@@ -5,6 +5,10 @@ import React from 'react'
 
 export default ({ latitude, longitude, ...props }) => (
   <MapView.Marker
+    centerOffset={{
+      x: 54,
+      y: 18
+    }}
     coordinate={{
       latitude,
       longitude,
