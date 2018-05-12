@@ -57,6 +57,8 @@ fontWeight 400
 text REFRESH
 
 
+LogoSvg
+
 
 List
 onWhen <isShowingList
