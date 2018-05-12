@@ -45,27 +45,7 @@ width 80
 height 30
 
 
-ButtonOutline Vertical
-onClick <refresh
-borderColor #005fff
-borderWidth 1
-borderStyle solid
-borderTopLeftRadius 20
-borderTopRightRadius 20
-borderBottomLeftRadius 20
-borderBottomRightRadius 20
-paddingBottom 4
-paddingLeft 10
-paddingRight 10
-paddingTop 4
-marginRight 20
-Text
-color #005fff
-fontFamily Montserrat
-fontSize 10
-fontWeight 400
-text REFRESH
-
+ButtonOutline
 
 
 List
