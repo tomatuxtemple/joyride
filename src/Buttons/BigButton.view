@@ -1,0 +1,26 @@
+BigButton Vertical
+onClick <toggleList
+bottom 20
+position absolute
+alignItems center
+paddingTop 10
+paddingBottom 10
+borderTopLeftRadius 8
+borderTopRightRadius 8
+borderBottomLeftRadius 8
+borderBottomRightRadius 8
+backgroundColor #005fff
+zIndex 1
+alignSelf center
+width 90%
+MapSvg
+onWhen <isShowingList
+width 40
+height 40
+stroke white
+
+BikeSvg
+onWhen <!isShowingList
+width 40
+height 40
+stroke white
