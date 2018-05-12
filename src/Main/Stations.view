@@ -1,36 +1,10 @@
-NearBy Vertical
+Stations Vertical
 flexBasis auto
 flexGrow 1
 flexShrink 1
 backgroundColor white
-Button Vertical
-onClick <toggleList
-bottom 20
-position absolute
-alignItems center
-paddingTop 10
-paddingBottom 10
-borderTopLeftRadius 8
-borderTopRightRadius 8
-borderBottomLeftRadius 8
-borderBottomRightRadius 8
-backgroundColor #005fff
-zIndex 1
-alignSelf center
-width 90%
-MapSvg
-onWhen <isShowingList
-width 40
-height 40
-stroke white
-
-BikeSvg
-onWhen <!isShowingList
-width 40
-height 40
-stroke white
-
-
+# paddingTop 1tbh
+# padddingBottom 1bbh
 Horizontal
 alignItems center
 marginTop 30
@@ -42,6 +16,11 @@ fontSize 14
 fontWeight 400
 text Stations near by
 flexGrow 1
+
+Loading
+onWhen <isLoading
+size 20
+color #005fff
 
 Vertical
 onClick <refresh
@@ -57,6 +36,9 @@ paddingLeft 10
 paddingRight 10
 paddingTop 4
 marginRight 20
+opacity 1
+when <isLoading
+opacity 0.25
 Text
 color #005fff
 fontFamily Montserrat
@@ -67,7 +49,6 @@ text REFRESH
 
 
 List
-onWhen <isShowingList
 from <
 flexGrow 1
 flexShrink 1
@@ -76,7 +57,9 @@ flexBasis auto
 paddingLeft 20
 paddingRight 20
 marginTop 10
+contentContainerStyle <
 Station
+<<<<<<< HEAD:src/Main/NearBy.view
 
 
 Map
@@ -88,3 +71,6 @@ showsUserLocation true
 List
 from <
 Marker
+=======
+onClick <findStation
+>>>>>>> 9d46f6d97a570dcbc0bb1696a43366075f06ad6c:src/Main/Stations.view

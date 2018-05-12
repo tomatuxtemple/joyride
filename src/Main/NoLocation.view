@@ -1,0 +1,8 @@
+NoLocation Vertical
+LocationServicesDisabled Text
+onWhen <isLocationServicesDisabled
+text LocationServicesDisabled
+
+LocationDenied Text
+onWhen <isLocationDenied
+text LocationDenied

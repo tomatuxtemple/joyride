@@ -27,14 +27,16 @@ export default class App extends Component {
   refresh = async () => {
     if (this.state.isLoading) return
 
+    const service = await Expo.Location.getProviderStatusAsync()
+
+    if (!service.locationServicesEnabled) return
+
     this.setState({
       error: null,
       isReady: false,
       isLoading: true,
       location: null,
     })
-
-    console.log('refreshing')
 
     const { status } = await Permissions.askAsync(Permissions.LOCATION)
 

@@ -1,5 +1,5 @@
-Station Horizontal
-alignItems center
+Station Vertical
+onClick <
 backgroundColor white
 borderTopLeftRadius 8
 borderTopRightRadius 8
@@ -15,6 +15,14 @@ paddingBottom 20
 paddingLeft 20
 paddingRight 20
 paddingTop 20
+opacity 1
+when <!isOpen
+opacity 0.15
+Text
+text <address
+
+Horizontal
+alignItems center
 BikeSvg
 width 30
 height 30
@@ -56,5 +64,5 @@ color #4a4a4a
 fontFamily Montserrat
 fontSize 14
 fontWeight 400
-text km
+text <unit m
 marginLeft 10
