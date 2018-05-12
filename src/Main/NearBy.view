@@ -1,0 +1,82 @@
+NearBy Vertical
+flexBasis auto
+flexGrow 1
+flexShrink 1
+backgroundColor white
+Button Vertical
+onClick <toggleList
+bottom 20
+position absolute
+alignItems center
+paddingTop 10
+paddingBottom 10
+borderTopLeftRadius 8
+borderTopRightRadius 8
+borderBottomLeftRadius 8
+borderBottomRightRadius 8
+backgroundColor #005fff
+zIndex 1
+alignSelf center
+width 90%
+MapSvg
+onWhen <isShowingList
+width 40
+height 40
+stroke white
+
+BikeSvg
+onWhen <!isShowingList
+width 40
+height 40
+stroke white
+
+
+Horizontal
+alignItems center
+marginTop 30
+marginLeft 20
+Vertical
+onClick <refresh
+borderColor #005fff
+borderWidth 1
+borderStyle solid
+borderTopLeftRadius 20
+borderTopRightRadius 20
+borderBottomLeftRadius 20
+borderBottomRightRadius 20
+paddingBottom 4
+paddingLeft 10
+paddingRight 10
+paddingTop 4
+marginRight 20
+Text
+color #005fff
+fontFamily Montserrat
+fontSize 10
+fontWeight 400
+text REFRESH
+
+
+
+List
+onWhen <isShowingList
+from <
+flexGrow 1
+flexShrink 1
+overflowY auto
+flexBasis auto
+paddingLeft 20
+paddingRight 20
+marginTop 10
+Station
+
+
+Map
+onWhen <!isShowingList
+marginTop 10
+latitude <
+longitude <
+showsUserLocation true
+List
+from <
+Marker
