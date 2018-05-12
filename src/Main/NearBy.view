@@ -3,7 +3,7 @@ flexBasis auto
 flexGrow 1
 flexShrink 1
 backgroundColor white
-Button Vertical
+BigButton Vertical
 onClick <toggleList
 bottom 20
 position absolute
