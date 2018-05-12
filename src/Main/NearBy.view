@@ -45,7 +45,7 @@ width 80
 height 30
 
 
-Vertical
+ButtonOutline Vertical
 onClick <refresh
 borderColor #005fff
 borderWidth 1
