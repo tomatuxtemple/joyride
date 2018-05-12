@@ -5,49 +5,6 @@ flexShrink 1
 backgroundColor white
 # paddingTop 1tbh
 # padddingBottom 1bbh
-Horizontal
-alignItems center
-marginTop 30
-marginLeft 20
-Text
-color #4a4a4a
-fontFamily Montserrat
-fontSize 14
-fontWeight 400
-text Stations near by
-flexGrow 1
-
-Loading
-onWhen <isLoading
-size 20
-color #005fff
-
-Vertical
-onClick <refresh
-borderColor #005fff
-borderWidth 1
-borderStyle solid
-borderTopLeftRadius 20
-borderTopRightRadius 20
-borderBottomLeftRadius 20
-borderBottomRightRadius 20
-paddingBottom 4
-paddingLeft 10
-paddingRight 10
-paddingTop 4
-marginRight 20
-opacity 1
-when <isLoading
-opacity 0.25
-Text
-color #005fff
-fontFamily Montserrat
-fontSize 10
-fontWeight 400
-text REFRESH
-
-
-
 List
 from <
 flexGrow 1
@@ -59,18 +16,3 @@ paddingRight 20
 marginTop 10
 contentContainerStyle <
 Station
-<<<<<<< HEAD:src/Main/NearBy.view
-
-
-Map
-onWhen <!isShowingList
-marginTop 10
-latitude <
-longitude <
-showsUserLocation true
-List
-from <
-Marker
-=======
-onClick <findStation
->>>>>>> 9d46f6d97a570dcbc0bb1696a43366075f06ad6c:src/Main/Stations.view
