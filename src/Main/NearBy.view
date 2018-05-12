@@ -47,6 +47,9 @@ height 30
 
 ButtonOutline
 
+ButtonOutline
+marginRight 0
+
 
 List
 onWhen <isShowingList
