@@ -1,2 +1,2 @@
-import App from './src/Main/NearBy.view.logic.js'
+import App from './src/Main/App.view.logic.js'
 export default App

@@ -1,0 +1,14 @@
+App Vertical
+Setup
+onWhen <firstTime
+
+Vertical
+onWhen <!firstTime
+Cities
+onWhen <isCities
+
+Stations
+onWhen <isStations
+
+Map
+onWhen <isMap

@@ -2,6 +2,7 @@ import Dublin from './Dublin.json'
 import getDistance from './get-distance.js'
 
 const mapCity = city => station => ({
+  address: station.address,
   city,
   id: `${city}-${station.name}`,
   latitude: station.latitude,

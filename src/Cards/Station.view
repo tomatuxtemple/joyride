@@ -1,6 +1,5 @@
-Station Horizontal
+Station Vertical
 onClick <
-alignItems center
 backgroundColor white
 borderTopLeftRadius 8
 borderTopRightRadius 8
@@ -19,6 +18,11 @@ paddingTop 20
 opacity 1
 when <!isOpen
 opacity 0.15
+Text
+text <address
+
+Horizontal
+alignItems center
 BikeSvg
 width 30
 height 30

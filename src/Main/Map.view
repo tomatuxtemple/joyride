@@ -1,0 +1,13 @@
+Map Vertical
+Text
+text map
+
+MapView
+marginTop 10
+latitude <
+longitude <
+showsUserLocation true
+List
+from <
+Marker
+selected <id
