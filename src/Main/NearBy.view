@@ -35,6 +35,8 @@ Horizontal
 alignItems center
 marginTop 30
 marginLeft 20
+LogoSvg
+
 Vertical
 onClick <refresh
 borderColor #005fff
@@ -56,8 +58,6 @@ fontSize 10
 fontWeight 400
 text REFRESH
 
-
-LogoSvg
 
 
 List
