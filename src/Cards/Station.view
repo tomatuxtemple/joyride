@@ -21,6 +21,13 @@ opacity 0.15
 Text
 text <address
 
+Text
+color #323232
+fontFamily Montserrat
+fontSize 18
+fontWeight 400
+text Type something...
+
 Horizontal
 alignItems center
 BikeSvg
@@ -66,11 +73,3 @@ fontSize 14
 fontWeight 400
 text <unit m
 marginLeft 10
-
-
-Text
-color #323232
-fontFamily Montserrat
-fontSize 18
-fontWeight 400
-text Type something...
