@@ -37,7 +37,6 @@ Horizontal
 alignItems center
 Vertical
 alignItems center
-flexBasis auto
 justifyContent center
 BikeSvg
 width 30
