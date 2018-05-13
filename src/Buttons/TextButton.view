@@ -8,3 +8,9 @@ borderTopRightRadius 8
 borderBottomLeftRadius 8
 borderBottomRightRadius 8
 backgroundColor #005fff
+Text
+color #323232
+fontFamily Montserrat
+fontSize 18
+fontWeight 400
+text Type something...
