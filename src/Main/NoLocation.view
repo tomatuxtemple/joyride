@@ -18,7 +18,7 @@ height 100
 marginTop 20
 
 Horizontal
-alignSelf self-start
+alignSelf stretch
 marginLeft 20
 marginTop 50
 justifyContent stretch
