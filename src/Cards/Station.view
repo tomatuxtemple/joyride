@@ -54,7 +54,7 @@ SpacemachineSvg
 width 30
 height 30
 stroke #4a4a4a
-marginLeft 0
+marginLeft 30
 
 Text
 color #005fff
