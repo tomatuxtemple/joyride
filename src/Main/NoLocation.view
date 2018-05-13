@@ -20,7 +20,6 @@ marginTop 50
 justifyContent space-between
 marginRight 20
 flexGrow 1
-flexShrink 1
 Text
 text Location services
 fontFamily Montserrat
