@@ -87,6 +87,5 @@ fontFamily Montserrat
 fontSize 18
 fontWeight 400
 text Station Closed
-position absolute
 alignSelf center
 marginTop 20
