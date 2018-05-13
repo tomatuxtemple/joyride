@@ -74,3 +74,11 @@ fontSize 14
 fontWeight 400
 text <unit m
 marginLeft 10
+
+
+Text
+color #323232
+fontFamily Montserrat
+fontSize 18
+fontWeight 400
+text Type something...
