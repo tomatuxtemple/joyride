@@ -26,7 +26,6 @@ textAlign left
 
 Horizontal
 alignItems center
-flexBasis auto
 justifyContent center
 
 
