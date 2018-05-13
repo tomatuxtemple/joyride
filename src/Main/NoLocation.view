@@ -73,7 +73,7 @@ marginTop 50
 Text
 text enable location services
 fontFamily Montserrat
-fontSize 20
+fontSize 16
 fontWeight 400
 textAlign center
 paddingLeft 30
