@@ -71,7 +71,7 @@ paddingRight 30
 lineHeight 1.4
 
 
-Horizontal
+Vertical
 alignItems center
 justifyContent center
 marginBottom 30
