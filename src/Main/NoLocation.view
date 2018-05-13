@@ -27,6 +27,7 @@ textAlign left
 Horizontal
 width 100
 borderColor #ffaa00
+borderStyle solid
 
 
 Text
