@@ -1,10 +1,16 @@
 Cities Vertical
-paddingLeft 20
-paddingRight 20
+flexBasis auto
+flexGrow 1
+flexShrink 1
+NavBar
+
 List
+flexBasis auto
+flexGrow 1
+flexShrink 1
+overflowY auto
+marginTop 10
+contentContainerStyle <
 from <
 City
 onClick <
-
-
-NavBar
