@@ -101,7 +101,7 @@ paddingTop 10
 Text
 color #323232
 fontFamily Montserrat
-fontSize 18
+fontSize 14
 fontWeight 400
 text Keep disabled
 marginTop 10
