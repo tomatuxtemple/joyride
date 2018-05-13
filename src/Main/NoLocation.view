@@ -34,7 +34,7 @@ lineHeight 1.4
 textAlign left
 
 Horizontal
-width 80
+width 60
 borderColor #f0f0f0
 borderStyle solid
 borderWidth 2
