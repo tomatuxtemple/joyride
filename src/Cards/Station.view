@@ -83,7 +83,7 @@ Vertical
 alignSelf center
 paddingBottom 10
 paddingLeft 20
-paddingRight 10
+paddingRight 20
 paddingTop 10
 position absolute
 top 30
