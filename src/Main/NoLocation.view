@@ -25,7 +25,7 @@ marginTop 50
 textAlign left
 
 Horizontal
-width 100
+width 60
 borderColor #f0f0f0
 borderStyle solid
 borderWidth 1
