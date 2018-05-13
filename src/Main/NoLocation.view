@@ -34,7 +34,7 @@ textAlign center
 paddingLeft 30
 paddingRight 30
 lineHeight 1.4
-marginTop 30
+marginTop 50
 
 Text
 text enable location services
