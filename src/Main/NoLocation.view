@@ -23,6 +23,7 @@ marginLeft 20
 marginTop 50
 justifyContent stretch
 marginRight 20
+alignItems center
 Text
 text Location services
 fontFamily Montserrat
