@@ -108,7 +108,6 @@ lineHeight 1.4
 Vertical
 alignItems center
 justifyContent center
-marginBottom 30
 marginLeft 30
 marginRight 30
 TextButton
