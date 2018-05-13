@@ -105,7 +105,6 @@ Horizontal
 alignItems center
 justifyContent center
 marginTop 30%
-alignSelf auto
 Vertical
 alignItems center
 flexBasis auto
