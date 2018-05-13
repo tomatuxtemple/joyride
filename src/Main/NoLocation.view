@@ -19,7 +19,7 @@ marginTop 20
 
 Horizontal
 marginLeft 20
-marginTop 30
+marginTop 20
 justifyContent stretch
 marginRight 20
 alignItems center
