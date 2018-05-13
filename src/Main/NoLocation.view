@@ -12,7 +12,7 @@ SettingsImage
 width 80
 height 80
 
-Vertical
+Horizontal
 alignItems center
 flexBasis auto
 flexGrow 1
