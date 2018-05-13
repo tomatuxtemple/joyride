@@ -82,7 +82,7 @@ marginLeft 10
 Vertical
 alignSelf center
 paddingBottom 10
-paddingLeft 10
+paddingLeft 20
 paddingRight 10
 paddingTop 10
 position absolute
