@@ -8,7 +8,3 @@ borderTopRightRadius 8
 borderBottomLeftRadius 8
 borderBottomRightRadius 8
 backgroundColor #005fff
-ListSvg
-width 30
-height 30
-stroke white
