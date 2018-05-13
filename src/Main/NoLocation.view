@@ -17,6 +17,16 @@ text Looks like you need to
 fontFamily Montserrat
 fontSize 20
 fontWeight 400
+paddingLeft 30
+paddingRight 30
+lineHeight 1.4
+marginTop 10
+
+Text
+text Looks like you need to
+fontFamily Montserrat
+fontSize 20
+fontWeight 400
 textAlign center
 paddingLeft 30
 paddingRight 30
