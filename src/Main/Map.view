@@ -7,6 +7,7 @@ NavBar
 Vertical
 position absolute
 bottom 10
+flexGrow 1
 BigButton
 
 
