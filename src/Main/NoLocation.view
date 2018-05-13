@@ -32,6 +32,7 @@ borderWidth 1
 borderTopRightRadius 2
 borderTopLeftRadius 2
 borderBottomLeftRadius 2
+borderBottomRightRadius 2
 
 
 Text
