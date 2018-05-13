@@ -9,7 +9,7 @@ borderBottomLeftRadius 8
 borderBottomRightRadius 8
 backgroundColor #005fff
 Text
-color #323232
+color #ffffff
 fontFamily Montserrat
 fontSize 18
 fontWeight 400
