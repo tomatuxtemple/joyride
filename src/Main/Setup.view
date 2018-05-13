@@ -3,6 +3,7 @@ flexGrow 1
 flexShrink 1
 flexBasis auto
 alignItems center
+justifyContent center
 PositionSvg
 width 80
 height 140
