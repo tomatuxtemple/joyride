@@ -40,7 +40,6 @@ borderBottomRightRadius 20
 height 40
 Vertical
 alignItems center
-flexBasis auto
 justifyContent center
 
 
