@@ -98,11 +98,11 @@ lineHeight 1.4
 Horizontal
 alignItems center
 justifyContent center
-TextButton
-
 Text
 color #323232
 fontFamily Montserrat
 fontSize 18
 fontWeight 400
 text Type something...
+
+TextButton
