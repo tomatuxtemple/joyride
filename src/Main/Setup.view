@@ -109,7 +109,7 @@ marginLeft 10
 Horizontal
 alignItems center
 justifyContent center
-marginBottom 10
+marginBottom 30
 marginLeft 50
 marginRight 50
 Vertical
