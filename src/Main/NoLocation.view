@@ -32,7 +32,7 @@ Horizontal
 width 80
 borderColor #f0f0f0
 borderStyle solid
-borderWidth 3
+borderWidth 2
 borderTopRightRadius 20
 borderTopLeftRadius 20
 borderBottomLeftRadius 20
