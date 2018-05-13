@@ -5,7 +5,7 @@ flexBasis auto
 alignItems center
 justifyContent center
 PositionSvg
-width 40
+width 60
 
 Station Vertical
 onClick <
