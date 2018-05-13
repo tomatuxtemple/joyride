@@ -24,15 +24,6 @@ marginTop 50
 justifyContent stretch
 marginRight 20
 alignItems center
-Text
-text Location services
-fontFamily Montserrat
-fontSize 16
-fontWeight 400
-lineHeight 1.4
-textAlign left
-flexGrow 1
-
 Horizontal
 width 70
 borderColor #e5e5e5
