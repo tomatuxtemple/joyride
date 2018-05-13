@@ -26,6 +26,7 @@ textAlign left
 
 Horizontal
 width 100
+backgroundColor #ffaa00
 
 
 Text
