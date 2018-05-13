@@ -87,7 +87,7 @@ paddingLeft 20
 paddingRight 20
 paddingTop 5
 position absolute
-top 35
+top 38
 backgroundColor rgba(0, 95, 255, 0.1)
 borderTopLeftRadius 4
 borderTopRightRadius 4
