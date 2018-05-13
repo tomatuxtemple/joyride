@@ -87,7 +87,7 @@ paddingRight 10
 paddingTop 10
 position absolute
 top 30
-backgroundColor #ffaa00
+backgroundColor #fffefc
 Text
 onWhen <isOpen
 color #323232
