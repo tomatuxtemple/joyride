@@ -5,7 +5,7 @@ flexBasis auto
 alignItems center
 justifyContent center
 Text
-text Calculate dystance 
+text Calculate dystance base
 fontFamily Montserrat
 fontSize 20
 fontWeight 400
