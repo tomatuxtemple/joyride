@@ -77,8 +77,10 @@ marginLeft 10
 
 
 Text
+onWhen <isOpen
 color #323232
 fontFamily Montserrat
 fontSize 18
 fontWeight 400
 text Type something...
+position absolute
