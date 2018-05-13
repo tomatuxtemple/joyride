@@ -21,7 +21,7 @@ paddingLeft 30
 paddingRight 30
 lineHeight 1.4
 marginTop 10
-textAlign center
+textAlign left
 
 Text
 text Looks like you need to
