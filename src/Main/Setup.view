@@ -1,11 +1,11 @@
 Setup Vertical
 flexGrow 1
 flexShrink 1
-flexBasis
+flexBasis auto
 alignItems center
 justifyContent center
 Text
-text Calculate dystance based on location?
+text Calculate dystance base on location?
 fontFamily Montserrat
 fontSize 24
 fontWeight 400
@@ -13,3 +13,69 @@ textAlign center
 paddingLeft 20
 paddingRight 20
 lineHeight 1.4
+
+Station Vertical
+onClick <
+width 80%
+backgroundColor white
+borderTopLeftRadius 8
+borderTopRightRadius 8
+borderBottomLeftRadius 8
+borderBottomRightRadius 8
+shadowColor rgba(96, 134, 180, 0.2)
+shadowSpread 0
+shadowBlur 20
+shadowOffsetY 5
+shadowOffsetX 0
+marginTop 40
+paddingBottom 20
+paddingLeft 20
+paddingRight 20
+paddingTop 20
+opacity 1
+Horizontal
+alignItems center
+marginTop 10
+BikeSvg
+width 30
+height 30
+stroke #4a4a4a
+
+Text
+color #005fff
+fontFamily Montserrat
+fontSize 26
+fontWeight 600
+text 17
+marginLeft 10
+
+SpacemachineSvg
+width 30
+height 30
+stroke #4a4a4a
+marginLeft 30
+
+Text
+color #005fff
+fontFamily Montserrat
+fontSize 26
+fontWeight 600
+text 8
+marginLeft 10
+flexGrow 1
+
+Text
+color #4a4a4a
+fontFamily Montserrat
+fontSize 26
+fontWeight 600
+text 0.2
+marginLeft 10
+
+Text
+color #4a4a4a
+fontFamily Montserrat
+fontSize 14
+fontWeight 400
+text m
+marginLeft 10
