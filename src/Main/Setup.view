@@ -7,7 +7,7 @@ justifyContent center
 Text
 text Calculate dystance based on location?
 fontFamily Montserrat
-fontSize 26
+fontSize 24
 fontWeight 400
 textAlign center
 paddingLeft 10
