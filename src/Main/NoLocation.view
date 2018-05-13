@@ -8,6 +8,10 @@ flexShrink 1
 flexBasis auto
 alignItems center
 justifyContent center
+SettingsImage
+width 80
+height 80
+
 Text
 text Calculate dystance base
 fontFamily Montserrat
@@ -99,10 +103,6 @@ text km
 marginLeft 10
 
 
-
-SettingsImage
-width 80
-height 80
 
 
 Horizontal
