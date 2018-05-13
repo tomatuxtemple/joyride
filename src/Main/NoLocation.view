@@ -76,6 +76,7 @@ alignItems center
 justifyContent center
 marginLeft 30
 marginRight 30
+marginBottom 10
 TextButton
 text Open in Settings
 marginLeft 0
