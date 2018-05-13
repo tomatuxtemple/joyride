@@ -1,5 +1,8 @@
 Map Vertical
+flexGrow 1
 NavBar
+
+BigButton
 
 MapView
 marginTop 10
@@ -10,7 +13,3 @@ List
 from <
 Marker
 selected <id id
-
-
-
-BigButton
