@@ -87,7 +87,7 @@ paddingRight 20
 paddingTop 10
 position absolute
 top 30
-backgroundColor #ddf8ff
+backgroundColor #e5f9ff
 borderTopLeftRadius 4
 borderTopRightRadius 4
 borderBottomLeftRadius 4
