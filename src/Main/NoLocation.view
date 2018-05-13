@@ -13,6 +13,7 @@ width 80
 height 80
 
 Horizontal
+alignSelf center
 Text
 text Location services
 fontFamily Montserrat
