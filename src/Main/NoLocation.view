@@ -50,7 +50,7 @@ shadowColor rgba(112, 147, 180, 0.2)
 borderTopLeftRadius 20
 borderTopRightRadius 20
 borderBottomLeftRadius 20
-borderBottomRightRadius 2
+borderBottomRightRadius 20
 
 
 
