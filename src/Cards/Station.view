@@ -90,7 +90,7 @@ top 30
 backgroundColor #f7f7f7
 borderTopLeftRadius 4
 borderTopRightRadius 4
-borderBottomLeftRadius 2
+borderBottomLeftRadius 4
 borderBottomRightRadius 2
 Text
 onWhen <isOpen
