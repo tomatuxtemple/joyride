@@ -64,3 +64,5 @@ text LocationServicesDisabled
 # LocationDenied Text
 # onWhen <isLocationDenied
 # text LocationDenied
+
+TextButton
