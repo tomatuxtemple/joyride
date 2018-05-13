@@ -20,6 +20,16 @@ paddingRight 30
 lineHeight 1.4
 marginTop 40
 
+Text
+text on location?
+fontFamily Montserrat
+fontSize 20
+fontWeight 400
+textAlign center
+paddingLeft 30
+paddingRight 30
+lineHeight 1.4
+
 Station Vertical
 onClick <
 width 80%
@@ -89,16 +99,6 @@ text km
 marginLeft 10
 
 
-
-Text
-text on location?
-fontFamily Montserrat
-fontSize 20
-fontWeight 400
-textAlign center
-paddingLeft 30
-paddingRight 30
-lineHeight 1.4
 
 Horizontal
 alignItems center
