@@ -80,7 +80,6 @@ marginLeft 10
 
 
 Vertical
-justifyContent center
 Text
 onWhen <isOpen
 color #323232
