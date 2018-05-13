@@ -82,6 +82,7 @@ marginLeft 10
 Vertical
 alignSelf center
 paddingBottom 10
+paddingLeft 10
 Text
 onWhen <isOpen
 color #323232
