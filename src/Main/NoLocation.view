@@ -14,7 +14,7 @@ height 80
 
 Horizontal
 alignSelf self-start
-marginLeft 10
+marginLeft 20
 Text
 text Location services
 fontFamily Montserrat
