@@ -110,7 +110,7 @@ Horizontal
 alignItems center
 justifyContent center
 marginBottom 30
-marginLeft 50%
+marginLeft 60%
 marginRight 50%
 Vertical
 alignItems center
