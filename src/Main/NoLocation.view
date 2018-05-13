@@ -71,7 +71,7 @@ lineHeight 1.4
 marginTop 50
 
 Text
-text enable locatio
+text location services
 fontFamily Montserrat
 fontSize 16
 fontWeight 400
