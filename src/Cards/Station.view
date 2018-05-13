@@ -80,6 +80,7 @@ marginLeft 10
 
 
 Vertical
+alignSelf center
 Text
 onWhen <isOpen
 color #323232
