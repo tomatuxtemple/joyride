@@ -6,6 +6,7 @@ NavBar
 
 Vertical
 position absolute
+bottom 10
 BigButton
 
 
