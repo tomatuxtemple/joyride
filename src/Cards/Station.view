@@ -81,7 +81,6 @@ marginLeft 10
 
 Vertical
 alignItems center
-flexBasis auto
 justifyContent center
 Text
 onWhen <isOpen
