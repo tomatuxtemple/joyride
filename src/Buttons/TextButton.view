@@ -8,7 +8,7 @@ borderTopRightRadius 8
 borderBottomLeftRadius 8
 borderBottomRightRadius 8
 backgroundColor #005fff
-paddingLeft 20
+paddingLeft 30
 paddingRight 20
 marginLeft 20
 Text
