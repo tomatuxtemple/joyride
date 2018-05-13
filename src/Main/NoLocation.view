@@ -22,7 +22,7 @@ alignSelf self-start
 marginLeft 20
 alignItems center
 marginTop 50
-justifyContent space-between
+justifyContent stretch
 marginRight 20
 Text
 text Location services
