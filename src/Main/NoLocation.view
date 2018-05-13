@@ -45,6 +45,7 @@ backgroundColor #ffffff
 shadowOffsetX 0
 shadowOffsetY 5
 shadowBlur 20
+shadowSpread 0
 
 
 
