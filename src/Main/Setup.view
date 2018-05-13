@@ -111,6 +111,8 @@ justifyContent center
 marginBottom 30
 marginLeft 30
 marginRight 30
+TextButton
+
 Vertical
 alignItems center
 flexBasis auto
@@ -127,6 +129,3 @@ fontFamily Montserrat
 fontSize 14
 fontWeight 400
 text Do nothing
-
-
-TextButton
