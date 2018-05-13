@@ -79,6 +79,12 @@ marginLeft 10
 
 
 
+Vertical
+alignItems center
+flexBasis auto
+flexGrow 1
+flexShrink 1
+justifyContent center
 Text
 onWhen <isOpen
 color #323232
