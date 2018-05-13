@@ -77,6 +77,16 @@ justifyContent center
 marginBottom 30
 marginLeft 30
 marginRight 30
+TextButton
+text Open in Settings
+
+TextButton
+onWhen <isLocationServicesDisabled
+text LocationServicesDisabled
+# LocationDenied Text
+# onWhen <isLocationDenied
+# text LocationDenied
+
 Vertical
 alignItems center
 flexBasis auto
@@ -93,14 +103,3 @@ fontFamily Montserrat
 fontSize 18
 fontWeight 400
 text Skip
-
-
-TextButton
-onWhen <isLocationServicesDisabled
-text LocationServicesDisabled
-# LocationDenied Text
-# onWhen <isLocationDenied
-# text LocationDenied
-
-TextButton
-text Open in Settings
