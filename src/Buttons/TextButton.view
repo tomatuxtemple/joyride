@@ -10,6 +10,7 @@ borderBottomRightRadius 8
 backgroundColor #005fff
 paddingLeft 20
 paddingRight 20
+marginLeft 10
 Text
 color #ffffff
 fontFamily Montserrat
