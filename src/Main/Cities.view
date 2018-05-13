@@ -1,11 +1,10 @@
 Cities Vertical
-Text
-text Cities
-
+paddingLeft 20
+paddingRight 20
 List
 from <
 City
 onClick <
 
 
-Station
+NavBar
