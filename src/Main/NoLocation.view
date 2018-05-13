@@ -29,7 +29,6 @@ width 100
 borderColor #f0f0f0
 borderStyle solid
 borderWidth 1
-borderTopLeftRadius 2
 
 
 Text
