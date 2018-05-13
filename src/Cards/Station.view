@@ -16,6 +16,8 @@ paddingLeft 20
 paddingRight 20
 paddingTop 20
 opacity 1
+Vertical
+opacity 1
 when <!isOpen
 opacity 0.15
 Text
@@ -76,11 +78,13 @@ text <unit m
 marginLeft 10
 
 
+
 Text
 onWhen <isOpen
 color #323232
 fontFamily Montserrat
 fontSize 18
 fontWeight 400
-text Type something...
+text Closed
 position absolute
+alignSelf center
