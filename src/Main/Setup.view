@@ -13,7 +13,6 @@ textAlign center
 paddingLeft 30
 paddingRight 30
 lineHeight 1.4
-wordBreak break-all
 
 Station Vertical
 onClick <
