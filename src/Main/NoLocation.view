@@ -61,7 +61,7 @@ lineHeight 1.4
 marginTop 50
 
 Text
-text enable location services 
+text enable location services
 fontFamily Montserrat
 fontSize 20
 fontWeight 400
@@ -81,18 +81,9 @@ TextButton
 text Open in Settings
 marginLeft 0
 
-TextButton
-onWhen <isLocationServicesDisabled
-text LocationServicesDisabled
-# LocationDenied Text
-# onWhen <isLocationDenied
-# text LocationDenied
 
 Vertical
 alignItems center
-flexBasis auto
-flexGrow 1
-flexShrink 1
 justifyContent center
 paddingBottom 10
 paddingLeft 20
@@ -104,4 +95,9 @@ fontFamily Montserrat
 fontSize 14
 fontWeight 400
 text Keep disabled
-marginTop 10
+# TextButton
+# onWhen <isLocationServicesDisabled
+# text LocationServicesDisabled
+# LocationDenied Text
+# onWhen <isLocationDenied
+# text LocationDenied
