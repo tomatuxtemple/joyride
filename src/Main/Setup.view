@@ -109,6 +109,7 @@ marginLeft 10
 Horizontal
 alignItems center
 justifyContent center
+marginBottom 10
 Vertical
 alignItems center
 flexBasis auto
