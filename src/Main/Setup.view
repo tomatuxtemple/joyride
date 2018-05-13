@@ -4,6 +4,8 @@ flexShrink 1
 flexBasis auto
 alignItems center
 justifyContent center
+PositionSvg
+
 Station Vertical
 onClick <
 width 80%
@@ -118,6 +120,3 @@ text No
 
 
 TextButton
-
-
-PositionSvg
