@@ -43,7 +43,7 @@ width 40
 height 40
 backgroundColor #ffffff
 shadowOffsetX 0
-shadowOffsetY 5
+shadowOffsetY 3
 shadowBlur 5
 shadowSpread 0
 shadowColor rgba(112, 147, 180, 0.33)
