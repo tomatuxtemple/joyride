@@ -17,7 +17,6 @@ alignSelf self-start
 marginLeft 20
 alignItems center
 marginTop 50
-width 100%
 Text
 text Location services
 fontFamily Montserrat
