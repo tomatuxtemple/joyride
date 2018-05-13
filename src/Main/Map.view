@@ -5,7 +5,6 @@ flexBasis
 NavBar
 
 Vertical
-alignItems center
 justifyContent center
 BigButton
 
