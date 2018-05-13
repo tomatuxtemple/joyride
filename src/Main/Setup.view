@@ -2,6 +2,10 @@ Setup Vertical
 flexGrow 1
 flexShrink 1
 flexBasis auto
+Vertical
+flexGrow 1
+flexShrink 1
+flexBasis auto
 alignItems center
 justifyContent center
 PositionSvg
@@ -101,10 +105,10 @@ marginLeft 10
 
 
 
+
 Horizontal
 alignItems center
 justifyContent center
-marginTop 30%
 Vertical
 alignItems center
 flexBasis auto
