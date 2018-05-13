@@ -12,6 +12,8 @@ SettingsImage
 width 80
 height 80
 
+WavesSvg
+
 Horizontal
 alignSelf self-start
 marginLeft 20
@@ -74,8 +76,6 @@ textAlign center
 paddingLeft 30
 paddingRight 30
 lineHeight 1.4
-
-WavesSvg
 
 
 Horizontal
