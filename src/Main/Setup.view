@@ -119,7 +119,7 @@ flexGrow 1
 flexShrink 1
 justifyContent center
 paddingBottom 20
-paddingTop 10
+paddingTop 20
 Text
 color #323232
 fontFamily Montserrat
