@@ -35,10 +35,17 @@ paddingTop 20
 opacity 1
 Horizontal
 alignItems center
+Vertical
+alignItems center
+flexBasis auto
+flexGrow 1
+flexShrink 1
+justifyContent center
 BikeSvg
 width 30
 height 30
 stroke #4a4a4a
+
 
 Text
 color #005fff
