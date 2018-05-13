@@ -18,7 +18,7 @@ textAlign center
 paddingLeft 30
 paddingRight 30
 lineHeight 1.4
-marginTop 40
+marginTop 20
 
 Text
 text on location?
