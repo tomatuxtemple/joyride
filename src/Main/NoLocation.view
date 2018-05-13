@@ -31,7 +31,7 @@ borderStyle solid
 borderWidth 1
 borderTopRightRadius 20
 borderTopLeftRadius 20
-borderBottomLeftRadius 2
+borderBottomLeftRadius 20
 borderBottomRightRadius 2
 
 
