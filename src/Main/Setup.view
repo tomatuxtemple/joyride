@@ -55,7 +55,6 @@ opacity 0.5
 Vertical
 alignItems center
 flexBasis auto
-flexShrink 1
 justifyContent center
 SpacemachineSvg
 width 30
