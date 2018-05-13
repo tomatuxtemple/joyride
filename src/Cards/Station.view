@@ -82,7 +82,7 @@ marginLeft 10
 Vertical
 onWhen <isOpen
 alignSelf center
-paddingBottom 10
+paddingBottom 5
 paddingLeft 20
 paddingRight 20
 paddingTop 10
