@@ -6,7 +6,7 @@ NavBar
 
 Vertical
 position absolute
-bottom 30
+bottom 20
 width 90%
 alignSelf center
 BigButton
