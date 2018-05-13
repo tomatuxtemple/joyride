@@ -98,7 +98,7 @@ lineHeight 1.4
 Horizontal
 alignItems center
 justifyContent center
-marginTop 10
+marginTop 30
 Text
 color #323232
 fontFamily Montserrat
