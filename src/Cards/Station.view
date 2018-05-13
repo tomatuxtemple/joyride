@@ -94,7 +94,7 @@ borderBottomLeftRadius 4
 borderBottomRightRadius 4
 Text
 onWhen <isOpen
-color #fefefe
+color #ffffff
 fontFamily Montserrat
 fontSize 18
 fontWeight 400
