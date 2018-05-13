@@ -1,6 +1,5 @@
 Map Vertical
-Text
-text map
+NavBar
 
 MapView
 marginTop 10
@@ -14,4 +13,4 @@ selected <id id
 
 
 
-NavBar
+BigButton
