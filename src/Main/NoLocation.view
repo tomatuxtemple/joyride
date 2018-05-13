@@ -46,7 +46,7 @@ shadowOffsetX 0
 shadowOffsetY 5
 shadowBlur 5
 shadowSpread 0
-shadowColor rgba(180, 180, 180, 0.2)
+shadowColor rgba(180, 122, 122, 0.2)
 
 
 
