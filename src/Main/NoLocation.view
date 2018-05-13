@@ -66,4 +66,4 @@ text LocationServicesDisabled
 # text LocationDenied
 
 TextButton
-text Calculate
+text Open in Settings
