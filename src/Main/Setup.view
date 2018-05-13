@@ -10,7 +10,7 @@ fontFamily Montserrat
 fontSize 24
 fontWeight 400
 textAlign center
-paddingLeft 20
+paddingLeft 30
 paddingRight 20
 lineHeight 1.4
 
@@ -77,5 +77,5 @@ color #4a4a4a
 fontFamily Montserrat
 fontSize 14
 fontWeight 400
-text m
+text km
 marginLeft 10
