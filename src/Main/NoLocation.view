@@ -13,6 +13,7 @@ width 80
 height 80
 
 WavesSvg
+width 90
 
 Horizontal
 alignSelf self-start
