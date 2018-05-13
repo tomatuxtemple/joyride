@@ -38,6 +38,13 @@ borderTopLeftRadius 20
 borderBottomLeftRadius 20
 borderBottomRightRadius 20
 height 40
+Vertical
+alignItems center
+flexBasis auto
+flexGrow 1
+flexShrink 1
+justifyContent center
+
 
 
 Text
