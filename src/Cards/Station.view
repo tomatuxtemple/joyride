@@ -86,6 +86,7 @@ paddingLeft 10
 paddingRight 10
 paddingTop 10
 position absolute
+top 10
 Text
 onWhen <isOpen
 color #323232
