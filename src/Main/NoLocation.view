@@ -33,6 +33,7 @@ borderTopRightRadius 20
 borderTopLeftRadius 20
 borderBottomLeftRadius 20
 borderBottomRightRadius 20
+height 40
 
 
 Text
