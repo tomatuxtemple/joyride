@@ -15,8 +15,14 @@ height 30
 
 
 ButtonOutline
+onWhen <!isCities
 marginRight 10
 text REFRESH
 
 ButtonOutline
+onWhen <!isCities
 text CITIES
+
+ButtonOutline
+onWhen <isCities
+text CANCEL

@@ -3,6 +3,7 @@ flexBasis auto
 flexGrow 1
 flexShrink 1
 NavBar
+isCities <
 
 List
 flexBasis auto

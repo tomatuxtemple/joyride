@@ -6,6 +6,7 @@ Vertical
 onWhen <!firstTime
 Cities
 onWhen <isCities
+isCities <
 
 Stations
 onWhen <isStations
