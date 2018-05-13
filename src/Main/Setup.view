@@ -98,5 +98,4 @@ lineHeight 1.4
 Horizontal
 alignItems center
 flexBasis auto
-flexShrink 1
 justifyContent center
