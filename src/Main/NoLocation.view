@@ -79,6 +79,7 @@ marginLeft 30
 marginRight 30
 TextButton
 text Open in Settings
+marginLeft 20
 
 TextButton
 onWhen <isLocationServicesDisabled
