@@ -1,5 +1,6 @@
 Splash Vertical
 flexGrow 1
 flexShrink 1
+flexBasis
 Text
 text as
