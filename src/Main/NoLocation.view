@@ -28,6 +28,7 @@ Horizontal
 width 100
 borderColor #ffaa00
 borderStyle solid
+borderWidth 1
 
 
 Text
