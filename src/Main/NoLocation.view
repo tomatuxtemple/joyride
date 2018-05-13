@@ -26,7 +26,7 @@ textAlign left
 
 Horizontal
 width 100
-borderColor #ffffff
+borderColor #f0f0f0
 borderStyle solid
 borderWidth 1
 
