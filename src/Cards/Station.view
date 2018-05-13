@@ -80,7 +80,6 @@ marginLeft 10
 
 
 Vertical
-alignItems center
 justifyContent center
 Text
 onWhen <isOpen
