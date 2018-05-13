@@ -62,7 +62,7 @@ borderBottomRightRadius 20
 Text
 text Looks like you need to enable
 fontFamily Montserrat
-fontSize 16
+fontSize 20
 fontWeight 400
 textAlign center
 paddingLeft 30
