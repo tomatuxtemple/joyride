@@ -47,6 +47,7 @@ paddingLeft 20
 paddingRight 20
 paddingTop 20
 opacity 1
+marginTop 10
 Horizontal
 alignItems center
 Vertical
