@@ -6,7 +6,6 @@ NavBar
 
 Vertical
 alignItems center
-flexBasis auto
 justifyContent center
 BigButton
 
