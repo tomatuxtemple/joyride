@@ -5,7 +5,6 @@ flexBasis auto
 borderBottomLeftRadius 2
 borderBottomRightRadius 2
 borderTopRightRadius 2
-borderTopLeftRadius 2
 borderStyle solid
 Vertical
 flexGrow 1
