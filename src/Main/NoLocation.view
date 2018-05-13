@@ -5,6 +5,7 @@ flexBasis auto
 borderBottomLeftRadius 2
 borderBottomRightRadius 2
 borderTopRightRadius 2
+borderTopLeftRadius 2
 Vertical
 flexGrow 1
 flexShrink 1
