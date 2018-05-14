@@ -1,5 +1,4 @@
 import { getLiveInfo, getStations } from '../cities/index.js'
-import Location from './Location.js'
 import React from 'react'
 
 export default class Stations extends React.Component {
@@ -45,7 +44,7 @@ export default class Stations extends React.Component {
   render() {
     const { props, state } = this
 
-    return this.props.render({
+    return this.props.children({
       refresh: props.refresh,
       state,
     })

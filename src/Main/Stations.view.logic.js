@@ -3,9 +3,8 @@ import Stations from './Stations.js'
 import StationsView from './Stations.view.js'
 
 export default props => (
-  <Stations
-    {...props}
-    render={({ state, refresh }) => (
+  <Stations {...props}>
+    {({ state, refresh }) => (
       <StationsView
         {...props}
         from={state.from}
@@ -14,5 +13,5 @@ export default props => (
         }}
       />
     )}
-  />
+  </Stations>
 )

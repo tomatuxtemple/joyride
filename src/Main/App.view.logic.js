@@ -121,11 +121,9 @@ class AppLogic extends React.Component {
   }
 }
 
-const AppWithLocation = props => (
-  <Location render={location => <AppLogic {...props} location={location} />} />
-)
-
 const AppThatWaitedForAssets = () => (
-  <WaitForAssets>{() => <AppWithLocation />}</WaitForAssets>
+  <WaitForAssets>
+    {() => <Location>{location => <AppLogic location={location} />}</Location>}
+  </WaitForAssets>
 )
 export default AppThatWaitedForAssets

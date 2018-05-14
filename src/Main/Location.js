@@ -108,7 +108,7 @@ export default class LocationComponent extends Component {
   }
 
   render() {
-    return this.props.render({
+    return this.props.children({
       askForPermission: this.askForPermission,
       checkLocationServices: this.checkLocationServices,
       state: this.state,
