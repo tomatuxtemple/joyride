@@ -5,7 +5,7 @@ import React, { Component } from 'react'
 
 export default class LocationComponent extends Component {
   state = {
-    isLoading: true,
+    isLoading: false,
     isLocationServicesEnabled: false,
     isPermissionGranted: false,
     isReady: false,
