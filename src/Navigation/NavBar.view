@@ -16,13 +16,16 @@ height 30
 
 ButtonOutline
 onWhen <!isCities
+onClick <refresh
 marginRight 10
 text REFRESH
 
 ButtonOutline
 onWhen <!isCities
+onClick <goToCities
 text CITIES
 
 ButtonOutline
-onWhen <isCities
-text CANCEL
+onWhen <isCitiesAndCanGoBack
+onClick <back
+text BACK

@@ -6,10 +6,14 @@ Vertical
 onWhen <!firstTime
 Cities
 onWhen <isCities
-isCities <
+back <
+canGoBack <
+onClick <chooseCity
 
 Stations
 onWhen <isStations
+city <
+goToCities <
 
 Map
 onWhen <isMap

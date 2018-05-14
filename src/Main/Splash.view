@@ -1,7 +1,7 @@
 Splash Vertical
 flexGrow 1
 flexShrink 1
-flexBasis
+flexBasis auto
 alignItems center
 justifyContent center
 LogoIconSvg

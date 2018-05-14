@@ -3,7 +3,9 @@ flexBasis auto
 flexGrow 1
 flexShrink 1
 NavBar
-isCities <
+back <
+canGoBack <
+isCities true
 
 List
 flexBasis auto

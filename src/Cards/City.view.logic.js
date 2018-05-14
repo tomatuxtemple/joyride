@@ -4,6 +4,6 @@ import City from './City.view.js'
 export default ({ onClick, ...props }) => (
   <City
     {...props}
-    onClick={() => onClick(props)}
+    onClick={() => onClick(props.id)}
   />
 )

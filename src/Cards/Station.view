@@ -18,11 +18,8 @@ paddingTop 20
 opacity 1
 Vertical
 opacity 1
-when <!isOpen
+when <isClosed
 opacity 0.15
-Text
-text <address
-
 Text
 color #323232
 fontFamily Montserrat

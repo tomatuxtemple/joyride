@@ -6,6 +6,8 @@ backgroundColor white
 # paddingTop 1tbh
 # padddingBottom 1bbh
 NavBar
+goToCities <
+refresh <
 
 List
 from <

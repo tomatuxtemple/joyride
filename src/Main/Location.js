@@ -1,67 +1,116 @@
+import * as AsyncStorage from '../async-storage.js'
 import { Constants, Location, Permissions } from 'expo'
 import { Platform } from 'react-native'
 import React, { Component } from 'react'
 
-export default class App extends Component {
+export default class LocationComponent extends Component {
   state = {
-    error: null,
+    isLoading: true,
+    isLocationServicesEnabled: false,
+    isPermissionGranted: false,
     isReady: false,
-    isLoading: false,
     location: null,
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     if (Platform.OS === 'android' && !Constants.isDevice) {
       this.setState({
-        error:
-          'Oops, this will not work on Sketch in an Android emulator. Try it on your device!',
         isLoading: false,
         isReady: true,
         location: null,
       })
     } else {
-      this.refresh()
+      this.checkLocationServices(async () => {
+        if (!this.state.isLocationServicesEnabled) return
+
+        const isPermissionGranted = await AsyncStorage.getItem(
+          '@joyride:isPermissionGranted'
+        )
+        if (!isPermissionGranted) {
+          this.ready()
+          return
+        }
+
+        // it might be the case that we think we have permissions
+        // but the user revoked them afterwards by hand
+        this.askForPermission(() => this.refresh(this.ready))
+      })
     }
   }
 
-  refresh = async () => {
-    if (this.state.isLoading) return
+  askForPermission = async callback => {
+    const { status } = await Permissions.askAsync(Permissions.LOCATION)
 
-    const service = await Expo.Location.getProviderStatusAsync()
+    const isPermissionGranted = status === 'granted'
 
-    if (!service.locationServicesEnabled) return
+    await AsyncStorage.setItem(
+      '@joyride:isPermissionGranted',
+      isPermissionGranted
+    )
+
+    this.setState(
+      {
+        isPermissionGranted,
+        location: null,
+      },
+      callback
+    )
+  }
+
+  checkLocationServices = async callback => {
+    const service = await Location.getProviderStatusAsync()
+    const isLocationServicesEnabled = service.locationServicesEnabled
+    this.setState(
+      {
+        isLocationServicesEnabled,
+      },
+      callback
+    )
+  }
+
+  ready = callback => {
+    this.setState(
+      {
+        isLoading: false,
+        isReady: true,
+      },
+      callback
+    )
+  }
+
+  refresh = async callback => {
+    if (
+      this.state.isLoading ||
+      !this.state.isLocationServicesEnabled ||
+      !this.state.isPermissionGranted
+    ) {
+      if (typeof callback === 'function') {
+        callback()
+      }
+      return
+    }
 
     this.setState({
-      error: null,
       isReady: false,
       isLoading: true,
       location: null,
     })
 
-    const { status } = await Permissions.askAsync(Permissions.LOCATION)
-
-    if (status !== 'granted') {
+    try {
       this.setState({
-        error: 'Permission to access location was denied',
-        isReady: true,
-        isLoading: false,
-        location: null,
+        location: await Location.getCurrentPositionAsync(),
       })
-      return
+    } catch (error) {
+      console.error(error)
     }
 
-    const location = await Location.getCurrentPositionAsync({})
-
-    this.setState({
-      error: null,
-      isLoading: false,
-      isReady: true,
-      location,
-    })
+    this.ready(callback)
   }
 
   render() {
     return this.props.render({
+      askForPermission: this.askForPermission,
+      checkLocationServices: this.checkLocationServices,
       state: this.state,
       refresh: this.refresh,
     })

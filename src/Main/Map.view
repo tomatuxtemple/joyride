@@ -1,7 +1,7 @@
 Map Vertical
 flexGrow 1
 flexShrink 1
-flexBasis
+flexBasis auto
 NavBar
 
 Vertical

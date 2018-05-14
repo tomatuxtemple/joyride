@@ -1,5 +1,5 @@
 ButtonOutline Vertical
-onClick <refresh
+onClick <
 borderColor #005fff
 borderWidth 1
 borderStyle solid
