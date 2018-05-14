@@ -220,7 +220,6 @@ const getStationsData = async city => {
     `https://api.jcdecaux.com/vls/v1/stations?contract=${city}&apiKey=${API_KEY}`
   )
   const data = await res.json()
-  console.log(data)
   return Array.isArray(data) ? data : []
 }
 

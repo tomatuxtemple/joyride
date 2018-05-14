@@ -81,13 +81,16 @@ class AppLogic extends React.Component {
   }
 
   render() {
-    const { state } = this
+    const { props, state } = this
     return (
       <App
         {...state}
         back={this.back}
         canGoBack={state.city !== null}
         chooseCity={this.chooseCity}
+        coords={
+          props.location.state.location && props.location.state.location.coords
+        }
         goToCities={this.goToCities}
         setup={this.setup}
       />
