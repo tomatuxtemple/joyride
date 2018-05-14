@@ -1,17 +1,15 @@
+import Map from './Map.view.js'
 import React from 'react'
 import Stations from './Stations.js'
-import StationsView from './Stations.view.js'
 
 export default props => (
   <Stations
     {...props}
     render={({ state, refresh }) => (
-      <StationsView
+      <Map
         {...props}
+        {...state.coords}
         from={state.from}
-        contentContainerStyle={{
-          paddingBottom: 200,
-        }}
       />
     )}
   />

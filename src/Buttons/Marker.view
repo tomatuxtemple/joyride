@@ -21,14 +21,14 @@ paddingTop 8
 opacity 0.85
 when <selected
 borderColor #005fff
-when <!isOpen
+when <isClosed
 opacity 0.15
 Dot Vertical
 position absolute
-top -2
-left -2
-width 4
-height 4
+top -4
+left -4
+width 8
+height 8
 borderTopLeftRadius 8
 borderTopRightRadius 8
 borderBottomLeftRadius 8
@@ -48,7 +48,7 @@ fontWeight 600
 text <freeBikes 17
 marginLeft 10
 
-SpaceSvg
+SpacemachineSvg
 width 16
 height 16
 marginLeft 16

@@ -20,3 +20,4 @@ paddingRight 20
 marginTop 10
 contentContainerStyle <
 Station
+onClick <

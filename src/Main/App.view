@@ -10,6 +10,9 @@ onWhen <firstTime
 
 Vertical
 onWhen <!firstTime
+flexGrow 1
+flexShrink 1
+flexBasis auto
 Cities
 onWhen <isCities
 back <
@@ -21,6 +24,12 @@ onWhen <isStations
 city <
 coords <
 goToCities <
+onClick <chooseStation
 
 Map
 onWhen <isMap
+city <
+coords <
+goToCities <
+goToStations <
+station <

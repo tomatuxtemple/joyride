@@ -12,6 +12,7 @@ class AppLogic extends React.Component {
     isSetup: false,
     isStations: false,
     isMap: false,
+    station: null,
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
@@ -19,6 +20,7 @@ class AppLogic extends React.Component {
       return {
         isLoading: false,
         isCities: true,
+        // city: 'Dublin',
         // isMap: true,
       }
     }
@@ -62,6 +64,16 @@ class AppLogic extends React.Component {
       city,
       isCities: false,
       isStations: true,
+      station: null,
+    })
+  }
+
+  chooseStation = station => {
+    this.setState({
+      station,
+      isCities: false,
+      isStations: false,
+      isMap: true,
     })
   }
 
@@ -69,6 +81,15 @@ class AppLogic extends React.Component {
     this.setState({
       isCities: true,
       isStations: false,
+      station: null,
+    })
+  }
+
+  goToStations = () => {
+    this.setState({
+      isMap: false,
+      isStations: true,
+      station: null,
     })
   }
 
@@ -88,10 +109,12 @@ class AppLogic extends React.Component {
         back={this.back}
         canGoBack={state.city !== null}
         chooseCity={this.chooseCity}
+        chooseStation={this.chooseStation}
         coords={
           props.location.state.location && props.location.state.location.coords
         }
         goToCities={this.goToCities}
+        goToStations={this.goToStations}
         setup={this.setup}
       />
     )
