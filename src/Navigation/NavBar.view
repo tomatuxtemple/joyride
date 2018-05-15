@@ -7,7 +7,6 @@ marginRight 20
 ButtonOutline
 onWhen <!isCities
 onClick <refresh
-marginRight 10
 text REFRESH
 
 Vertical
