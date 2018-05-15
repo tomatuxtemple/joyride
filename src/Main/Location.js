@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 
 export default class LocationComponent extends Component {
   state = {
+    city: null,
     isLoading: false,
     isLocationServicesEnabled: false,
     isPermissionGranted: false,
@@ -26,7 +27,7 @@ export default class LocationComponent extends Component {
         const isPermissionGranted = await AsyncStorage.getItem(
           '@joyride:isPermissionGranted'
         )
-        if (!isPermissionGranted) {
+        if (isPermissionGranted === false) {
           this.ready()
           return
         }
