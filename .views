@@ -1,14 +1,1 @@
-{
- "Setup": {
-  "width": 375,
-  "height": 667,
-  "isLight": false,
-  "direction": "row"
- },
- "NoLocation": {
-  "width": 375,
-  "height": 667,
-  "isLight": false,
-  "direction": "row"
- }
-}
+{}
