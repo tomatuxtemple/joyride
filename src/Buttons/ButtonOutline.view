@@ -12,6 +12,7 @@ paddingLeft 10
 paddingRight 10
 paddingTop 4
 marginRight < 0
+width 100
 Text
 color #005fff
 fontFamily Montserrat
