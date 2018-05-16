@@ -4,13 +4,11 @@ import StationsView from './Stations.view.js'
 
 export default props => (
   <Stations {...props}>
-    {({ state, refresh }) => (
+    {stations => (
       <StationsView
         {...props}
-        from={state.from}
-        contentContainerStyle={{
-          paddingBottom: 200,
-        }}
+        {...stations}
+        contentContainerStyle={{ paddingBottom: 200 }}
       />
     )}
   </Stations>

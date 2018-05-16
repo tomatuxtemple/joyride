@@ -1,5 +1,5 @@
 TextButton Vertical
-onClick <toggleList
+onClick <
 alignItems center
 paddingTop 10
 paddingBottom 10
@@ -15,4 +15,4 @@ color #ffffff
 fontFamily Montserrat
 fontSize 18
 fontWeight 400
-text < Calculate for me
+text < text

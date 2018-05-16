@@ -1,193 +1,28 @@
-import Amiens from './Amiens.json'
-import Besancon from './Besancon.json'
-import Brisbane from './Brisbane.json'
-import BruxellesCapitale from './Bruxelles-Capitale.json'
-import CergyPontoise from './Cergy-Pontoise.json'
-import Creteil from './Creteil.json'
-import Dublin from './Dublin.json'
-import Goteborg from './Goteborg.json'
-import Kazan from './Kazan.json'
-import Lillestrom from './Lillestrom.json'
-import Ljubljana from './Ljubljana.json'
-import Lund from './Lund.json'
-import Luxembourg from './Luxembourg.json'
-import Lyon from './Lyon.json'
-import Marseille from './Marseille.json'
-import Mulhouse from './Mulhouse.json'
-import Namur from './Namur.json'
-import Nancy from './Nancy.json'
-import Nantes from './Nantes.json'
-import Rouen from './Rouen.json'
-import Santander from './Santander.json'
-import Seville from './Seville.json'
-import Stockholm from './Stockholm.json'
-import Toulouse from './Toulouse.json'
-import Toyama from './Toyama.json'
-import Valence from './Valence.json'
-import Vilnius from './Vilnius.json'
-
-import getDistance from './get-distance.js'
-
-const mapStation = station => ({
-  address: station.address,
-  id: station.name,
-  latitude: station.latitude,
-  longitude: station.longitude,
-  number: station.number,
-  freeBikes: '-',
-  emptySpaces: '-',
-})
-
-export const cities = {
-  Amiens: {
-    area: {},
-    stations: Amiens.map(mapStation),
-  },
-  Besancon: {
-    area: {},
-    stations: Besancon.map(mapStation),
-  },
-  Brisbane: {
-    area: {},
-    stations: Brisbane.map(mapStation),
-  },
-  'Bruxelles-Capitale': {
-    area: {},
-    stations: BruxellesCapitale.map(mapStation),
-  },
-  'Cergy-Pontoise': {
-    area: {},
-    stations: CergyPontoise.map(mapStation),
-  },
-  Creteil: {
-    area: {},
-    stations: Creteil.map(mapStation),
-  },
-  Dublin: {
-    area: [
-      // top left
-      {
-        latitued: 53.7004,
-        longitude: -7.077924,
-      },
-      // top right
-      {
-        latitude: 53.63531,
-        longitude: -5.990278,
-      },
-      // bottom right
-      {
-        latitude: 53.002011,
-        longitude: -5.957319,
-      },
-      // bottom left
-      {
-        latitude: 52.973903,
-        longitude: -6.830732,
-      },
-    ],
-    stations: Dublin.map(mapStation),
-  },
-  Goteborg: {
-    area: {},
-    stations: Goteborg.map(mapStation),
-  },
-  Kazan: {
-    area: {},
-    stations: Kazan.map(mapStation),
-  },
-  Lillestrom: {
-    area: {},
-    stations: Lillestrom.map(mapStation),
-  },
-  Ljubljana: {
-    area: {},
-    stations: Ljubljana.map(mapStation),
-  },
-  Lund: {
-    area: {},
-    stations: Lund.map(mapStation),
-  },
-  Luxembourg: {
-    area: {},
-    stations: Luxembourg.map(mapStation),
-  },
-  Lyon: {
-    area: {},
-    stations: Lyon.map(mapStation),
-  },
-  Marseille: {
-    area: {},
-    stations: Marseille.map(mapStation),
-  },
-  Mulhouse: {
-    area: {},
-    stations: Mulhouse.map(mapStation),
-  },
-  Namur: {
-    area: {},
-    stations: Namur.map(mapStation),
-  },
-  Nancy: {
-    area: {},
-    stations: Nancy.map(mapStation),
-  },
-  Nantes: {
-    area: {},
-    stations: Nantes.map(mapStation),
-  },
-  Rouen: {
-    area: {},
-    stations: Rouen.map(mapStation),
-  },
-  Santander: {
-    area: {},
-    stations: Santander.map(mapStation),
-  },
-  Seville: {
-    area: {},
-    stations: Seville.map(mapStation),
-  },
-  Stockholm: {
-    area: {},
-    stations: Stockholm.map(mapStation),
-  },
-  Toulouse: {
-    area: {},
-    stations: Toulouse.map(mapStation),
-  },
-  Toyama: {
-    area: {},
-    stations: Toyama.map(mapStation),
-  },
-  Valence: {
-    area: {},
-    stations: Valence.map(mapStation),
-  },
-  Vilnius: {
-    area: {},
-    stations: Vilnius.map(mapStation),
-  },
-}
-
-export const list = Object.keys(cities).map(id => ({
-  id,
-  name: id,
-}))
+import * as cities from './cities.js'
+import geolib from 'geolib'
 
 const sortAlphabetically = (a, b) => (a < b ? -1 : a === b ? 0 : 1)
-const byDistance = (a, b) => a.distance - b.distance
 const byAddress = (a, b) => sortAlphabetically(a.address, b.address)
+const byDistance = (a, b) => a.distance - b.distance
 const byName = (a, b) => sortAlphabetically(a.name, b.name)
+
+export const list = cities.list
+
+export const findMyCity = coords => {
+  const found = list.find(city =>
+    geolib.isPointInside(coords, cities.byId[city.id].area)
+  )
+  return found ? found.id : null
+}
 
 export const getStations = (city, coords) =>
   !coords
-    ? cities[city].stations.sort(byAddress)
-    : cities[city].stations
+    ? cities.byId[city].stations.sort(byAddress)
+    : cities.byId[city].stations
         .map(station => {
           return {
             ...station,
-            distance: getDistance(coords, station),
+            distance: geolib.getDistance(coords, station),
           }
         })
         .sort(byDistance)

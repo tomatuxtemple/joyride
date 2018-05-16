@@ -16,12 +16,18 @@ class AppLogic extends React.Component {
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
-    if (nextProps.location.state.isReady && prevState.isLoading) {
+    if (
+      nextProps.location.isReady &&
+      (prevState.isLoading || prevState.isSetup)
+    ) {
+      const { city } = nextProps.location
+      const isCities = city === null
+
       return {
+        city,
         isLoading: false,
-        isCities: true,
-        // city: 'Dublin',
-        // isMap: true,
+        isCities,
+        isStations: !isCities,
       }
     }
 
@@ -32,20 +38,16 @@ class AppLogic extends React.Component {
     const isSetup = await AsyncStorage.getItem('@joyride:setup')
 
     if (isSetup) {
-      this.setState({
-        isSetup: true,
-      })
+      this.setState({ isSetup: true })
 
-      if (this.props.location.state.isReady) {
+      if (this.props.location.isReady) {
         this.setState({
           isLoading: false,
           isCities: true,
         })
       }
     } else {
-      this.setState({
-        isLoading: false,
-      })
+      this.setState({ isLoading: false })
     }
   }
 
@@ -93,12 +95,20 @@ class AppLogic extends React.Component {
     })
   }
 
-  setup = async () => {
+  finishSetup = async () => {
     await AsyncStorage.setItem('@joyride:setup', true)
+    this.setState({ isSetup: true })
+  }
 
-    this.setState({
-      isSetup: true,
-    })
+  setup = async () => {
+    await this.props.location.askForPermission()
+    await this.finishSetup()
+  }
+
+  skipSetup = async () => {
+    await this.props.location.dontGrantPermission()
+    await this.finishSetup()
+    this.setState({ isCities: true })
   }
 
   render() {
@@ -110,12 +120,14 @@ class AppLogic extends React.Component {
         canGoBack={state.city !== null}
         chooseCity={this.chooseCity}
         chooseStation={this.chooseStation}
-        coords={
-          props.location.state.location && props.location.state.location.coords
-        }
+        coords={props.location.location && props.location.location.coords}
+        coordsIsReady={props.location.isReady}
         goToCities={this.goToCities}
         goToStations={this.goToStations}
+        isNotSetupOrLoading={!state.isSetup || state.isLoading}
+        refresh={props.location.location ? props.location.refresh : null}
         setup={this.setup}
+        skipSetup={this.skipSetup}
       />
     )
   }

@@ -1,16 +1,25 @@
 import * as AsyncStorage from '../async-storage.js'
 import { Constants, Location, Permissions } from 'expo'
+import { findMyCity } from '../cities/index.js'
 import { Platform } from 'react-native'
 import React, { Component } from 'react'
 
 export default class LocationComponent extends Component {
-  state = {
-    city: null,
-    isLoading: false,
-    isLocationServicesEnabled: false,
-    isPermissionGranted: false,
-    isReady: false,
-    location: null,
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      askForPermission: this.askForPermission,
+      checkLocationServices: this.checkLocationServices,
+      city: null,
+      dontGrantPermission: this.dontGrantPermission,
+      isLoading: false,
+      isLocationServicesEnabled: false,
+      isPermissionGranted: false,
+      isReady: false,
+      location: null,
+      refresh: this.refresh,
+    }
   }
 
   async componentDidMount() {
@@ -27,14 +36,13 @@ export default class LocationComponent extends Component {
         const isPermissionGranted = await AsyncStorage.getItem(
           '@joyride:isPermissionGranted'
         )
-        if (isPermissionGranted === false) {
+        if (isPermissionGranted) {
+          // it might be the case that we think we have permissions
+          // but the user revoked them afterwards by hand
+          this.askForPermission()
+        } else {
           this.ready()
-          return
         }
-
-        // it might be the case that we think we have permissions
-        // but the user revoked them afterwards by hand
-        this.askForPermission(() => this.refresh(this.ready))
       })
     }
   }
@@ -54,7 +62,7 @@ export default class LocationComponent extends Component {
         isPermissionGranted,
         location: null,
       },
-      callback
+      this.refresh
     )
   }
 
@@ -64,6 +72,16 @@ export default class LocationComponent extends Component {
     this.setState(
       {
         isLocationServicesEnabled,
+      },
+      callback
+    )
+  }
+
+  loading = callback => {
+    this.setState(
+      {
+        isLoading: true,
+        isReady: false,
       },
       callback
     )
@@ -98,8 +116,10 @@ export default class LocationComponent extends Component {
     })
 
     try {
+      const location = await Location.getCurrentPositionAsync()
       this.setState({
-        location: await Location.getCurrentPositionAsync(),
+        city: location.coords ? findMyCity(location.coords) : null,
+        location,
       })
     } catch (error) {
       console.error(error)
@@ -108,12 +128,12 @@ export default class LocationComponent extends Component {
     this.ready(callback)
   }
 
+  dontGrantPermission = async () => {
+    await AsyncStorage.setItem('@joyride:isPermissionGranted', false)
+    this.setState({ isPermissionGranted: false })
+  }
+
   render() {
-    return this.props.children({
-      askForPermission: this.askForPermission,
-      checkLocationServices: this.checkLocationServices,
-      state: this.state,
-      refresh: this.refresh,
-    })
+    return this.props.children(this.state)
   }
 }

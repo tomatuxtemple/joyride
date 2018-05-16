@@ -6,20 +6,9 @@ export default class Stations extends React.Component {
     super(props)
 
     this.state = {
-      coords: props.coords,
       from: getStations(props.city, props.coords),
+      refresh: this.refresh,
     }
-  }
-
-  static getDerivedStateFromProps(nextProps, prevState) {
-    if (nextProps.coords !== prevState.coords) {
-      return {
-        from: getStations(nextProps.city, nextProps.coords),
-        coords: nextProps.coords,
-      }
-    }
-
-    return null
   }
 
   componentDidMount() {
@@ -27,26 +16,32 @@ export default class Stations extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    const { state } = this
-    if (prevState.coords !== state.coords) {
+    const { props } = this
+    if (prevProps.coordsIsReady !== props.coordsIsReady && props.coords) {
       this.getLiveInfo()
     }
   }
 
-  async getLiveInfo() {
-    const { props, state } = this
+  getLiveInfo = async () => {
+    const { props } = this
 
     this.setState({
-      from: await getLiveInfo(props.city, state.from),
+      from: await getLiveInfo(
+        props.city,
+        getStations(props.city, props.coords)
+      ),
     })
   }
 
-  render() {
-    const { props, state } = this
+  refresh = () => {
+    if (this.props.refresh) {
+      this.props.refresh()
+    } else {
+      this.getLiveInfo()
+    }
+  }
 
-    return this.props.children({
-      refresh: props.refresh,
-      state,
-    })
+  render() {
+    return this.props.children(this.state)
   }
 }

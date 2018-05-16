@@ -6,10 +6,12 @@ Splash
 onWhen <isLoading
 
 Setup
-onWhen <firstTime
+onWhen <isNotSetupOrLoading
+setup <
+skip <skipSetup
 
 Vertical
-onWhen <!firstTime
+onWhen <isSetup
 flexGrow 1
 flexShrink 1
 flexBasis auto
@@ -23,8 +25,10 @@ Stations
 onWhen <isStations
 city <
 coords <
+coordsIsReady <
 goToCities <
 onClick <chooseStation
+refresh <
 
 Map
 onWhen <isMap
