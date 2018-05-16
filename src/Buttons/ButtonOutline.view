@@ -12,9 +12,11 @@ paddingLeft 10
 paddingRight 10
 paddingTop 4
 marginRight < 0
+width 80
 Text
 color #005fff
 fontFamily Montserrat
 fontSize 10
 fontWeight 400
 text < LABEL
+textAlign center
