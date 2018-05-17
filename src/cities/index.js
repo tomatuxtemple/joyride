@@ -15,6 +15,13 @@ export const findMyCity = coords => {
   return found ? found.id : null
 }
 
+export const getCoords = (city, station) => {
+  const { latitude, longitude } = cities.byId[city].stations.find(
+    item => item.id === station
+  )
+  return { latitude, longitude }
+}
+
 export const getStations = (city, coords) =>
   !coords
     ? cities.byId[city].stations.sort(byAddress)
