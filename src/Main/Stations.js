@@ -17,6 +17,7 @@ export default class Stations extends React.Component {
 
   componentDidUpdate(prevProps, prevState) {
     const { props } = this
+
     if (prevProps.coordsIsReady !== props.coordsIsReady && props.coords) {
       this.getLiveInfo()
     }

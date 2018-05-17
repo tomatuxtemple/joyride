@@ -65,6 +65,7 @@ class AppLogic extends React.Component {
     this.setState({
       city,
       isCities: false,
+      isMap: false,
       isStations: true,
       station: null,
     })
@@ -82,6 +83,7 @@ class AppLogic extends React.Component {
   goToCities = () => {
     this.setState({
       isCities: true,
+      isMap: false,
       isStations: false,
       station: null,
     })
@@ -89,6 +91,7 @@ class AppLogic extends React.Component {
 
   goToStations = () => {
     this.setState({
+      isCities: false,
       isMap: false,
       isStations: true,
       station: null,
@@ -113,6 +116,7 @@ class AppLogic extends React.Component {
 
   render() {
     const { props, state } = this
+
     return (
       <App
         {...state}
@@ -125,7 +129,11 @@ class AppLogic extends React.Component {
         goToCities={this.goToCities}
         goToStations={this.goToStations}
         isNotSetupOrLoading={!state.isSetup || state.isLoading}
-        refresh={props.location.location ? props.location.refresh : null}
+        refresh={
+          props.location.location && props.location.city === state.city
+            ? props.location.refresh
+            : null
+        }
         setup={this.setup}
         skipSetup={this.skipSetup}
       />
