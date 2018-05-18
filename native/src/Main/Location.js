@@ -2,9 +2,9 @@ import * as AsyncStorage from '../async-storage.js'
 import { Constants, Location, Permissions } from 'expo'
 import { findMyCity } from '../cities/index.js'
 import { Platform } from 'react-native'
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class LocationComponent extends Component {
+export default class LocationComponent extends React.Component {
   constructor(props) {
     super(props)
 
